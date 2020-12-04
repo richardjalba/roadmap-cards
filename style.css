@@ -74,7 +74,7 @@ h1 {
   padding: 10px;
   font-weight: 700;
   font-size: larger;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 #btn-1:hover {
@@ -102,11 +102,36 @@ a:active {
   color: rgb(236, 240, 240);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 770px) {
   .container {
-    width: 100vw;
+    width: 90vw;
+  }
+  .bottom {
+    display: none;
   }
 
+  #btn-1 {
+    position: absolute;
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  #btn-1 {
+    position: absolute;
+    bottom: 1%;
+  }
+
+  .cards:nth-of-type(4),
   .cards:nth-of-type(5),
   .cards:nth-of-type(6) {
     display: none;
